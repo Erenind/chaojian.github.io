@@ -122,6 +122,10 @@
     left: -0.4583rem;
     bottom: 1.5694rem;
   }
+
+  .cardbox .card a .icon {
+    transform: translateY(.2393rem);
+  }
 }
 
 
