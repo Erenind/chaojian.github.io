@@ -156,6 +156,7 @@
   margin-left: .1042rem;
   line-height: .2604rem;
   color: transparent;
+  -webkit-background-clip: text;
   background-clip: text;
   background-size: 300% 100%;
   background-image: linear-gradient(to right, #abf68d, #34d4d4, #4babeb);
@@ -165,6 +166,13 @@
   animation-iteration-count: infinite;
   animation-duration: 5s;
   animation-direction: alternate;
+}
+
+@supports not (-webkit-background-clip: text) {
+  .logo {
+    background-image: noen;
+    color: #333;
+  }
 }
 
 @keyframes identifier {
