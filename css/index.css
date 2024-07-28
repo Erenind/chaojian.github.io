@@ -1,0 +1,539 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  body .header{
+    height: .9346rem;
+  }
+  .header .logo{
+    padding-left: .2336rem;
+    font-size: .5374rem;
+    line-height:.9346rem;
+  }
+  .header .nav>ul{
+    display: none;
+  }
+  .main .content .countdown{
+    height: 3.5748rem;
+  }
+  .main .content .countdown .flip {
+    width: .771rem;
+    height: 1.4019rem;
+    margin: .0607rem;
+    font-size: .5841rem;
+    line-height: 1.3318rem;
+    border-radius:.2336rem;
+  }
+  .main .content .countdown .flip .digital::before {
+    border-top-left-radius:.2336rem;
+    border-top-right-radius:.2336rem;
+  }
+  .main .content .countdown .flip .digital::after{
+    border-bottom-left-radius:.2336rem;
+    border-bottom-right-radius:.2336rem;
+  }
+  .main .content .countdown .divider {
+    font-size: .7477rem;
+    line-height: 4.7664rem;
+    font-style: normal;
+    color: rgb(51, 50, 50);
+    transform: translateY(-0.0701rem);
+  }
+  .main .content {
+    padding-left:.3505rem;
+    padding-right:.3505rem;
+  }
+  .main .content .countdown-text{
+    width:90%;
+    border-radius:.4673rem;
+  }
+  .main .content .countdown-text h1 {
+    font-size: 1.285rem;
+  }
+  .main .content .countdown-text h1{
+    line-height:1.2;
+  }
+  .header .nav .menu{
+    display: block;
+  }
+  .header .nav {
+    padding-right: .3037rem;
+  }
+  body .main{
+    background-size:auto 100%;
+    background-position:center;
+  }
+  .countdown-text p,.countdown-text a{
+    font-size: .4673rem;
+  }
+  .countdown-text .icon{
+    width:.3738rem;
+    height:.3738rem;
+    transform:translateY(.0467rem);
+  }
+  body .cardbox .card {
+    width: 90%;
+    height:11.6822rem;
+    margin: .3037rem auto;
+    border-radius:.4673rem;
+    padding:.4167rem;
+    backdrop-filter:none;
+  }
+  .cardbox .card h1 {
+    font-size:.9583rem;
+  }
+  .cardbox .card p {
+    font-size:.5556rem;
+    margin-top:.3056rem;
+    margin-bottom:.5rem;
+  }
+  .cardbox .card a{
+    font-size:.5556rem;
+  }
+  .cardbox .card span {
+    width:3.2083rem;
+    height:3.2083rem;
+    left:-0.4583rem;
+    bottom:1.5694rem;
+  }
+}
+
+
+
+/* header */
+.header {
+  /* background-color: #333; */
+  color: hwb(0 100% 0%);
+  height: .2604rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border-bottom: chartreuse .0052rem solid; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter:blur(10px);
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.logo {
+  font-size: .125rem;
+  font-weight: 900;
+  margin-left: .1042rem;
+  line-height: .2604rem;
+  color: transparent;
+  background-clip: text;
+  background-size: 300% 100%;
+  background-image: linear-gradient(to right, #abf68d, #34d4d4, #4babeb);
+  margin: 0;
+  padding-left: .1563rem;
+  animation-name: identifier;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+}
+
+@keyframes identifier {
+  from {
+    background-position: left top;
+  }
+
+  to {
+    background-position: right bottom;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: .1563rem;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin: 0 .0521rem;
+  display:flex;
+  align-items:center;
+}
+
+.nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: .0938rem;
+  font-weight: 900;
+}
+
+.nav a:hover {
+  color: #abf68d;
+}
+.nav .menu{
+  display:none;
+}
+.nav .menu .icon{
+  transform: translateY(.026rem);
+}
+
+.menu-box {
+  display:none;
+  width:7.6923rem;
+  height:12.8205rem;
+  background-color:#fff;
+  position:fixed;
+  top:0;
+  right:0;
+  transition:1s;
+  border-bottom-left-radius: .5128rem;
+  border-top-left-radius: .5128rem;
+  /* border-bottom-right-radius:.5128rem; */
+  color:black;
+  padding: .3846rem;
+}
+.menu-box h6 {
+  font-size:.5128rem;
+}
+.menu-box .close {
+  position:absolute;
+  top:.4039rem;
+  right:.2778rem;
+  width:.8205rem;
+  height:.8205rem;
+}
+.menu-box .close .icon{
+  transform:translateY(-0.2051rem)
+}
+.menu-box a{
+  width:100%;
+  font-size:.5128rem;
+  display:block;
+}
+.menu-box a:hover{
+  color: #abf68d;
+}
+
+
+
+
+/* main */
+.main {
+  height: 100vh;
+  width: 100%;
+  background-image: url('../res/Fantasy-Lake3.png');
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  overflow: scroll;
+}
+
+.content {
+  /* height: 52.0833rem; */
+  width: 100%;
+  padding-left: .6406rem;
+  padding-right: .6406rem;
+}
+
+
+.glass {
+  background: white;
+  background:linear-gradient(to right,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+}
+
+
+
+
+.countdownbox{
+  /* height:4.9271rem; */
+  /* border-bottom: .0052rem solid #ccc; */
+  position:relative;
+}
+/* countdown */
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.0833rem;
+  width: 100%;
+  margin-top: .1719rem;
+}
+
+.countdown {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* 时钟的分隔 */
+.countdown .divider {
+  font-size: .6875rem;
+  line-height: 1.0625rem;
+  font-style: normal;
+  color: rgb(51, 50, 50);
+  transform: translateY(-0.0677rem);
+}
+
+/* 时钟的卡片 */
+.countdown .flip {
+  position: relative;
+  width: .8125rem;
+  height: 1.3542rem;
+  margin: .0271rem;
+  font-size: .9479rem;
+  font-weight: 700;
+  line-height: 1.3542rem;
+  text-align: center;
+  background: rgb(46, 45, 45);
+  border: .0052rem solid rgb(34, 33, 33);
+  border-radius: .0521rem;
+  box-shadow: 0 0 .0313rem rgba(54, 54, 54, 0.5);
+}
+
+/* 时钟上的数字 */
+.countdown .flip .digital::before,
+.countdown .flip .digital::after {
+  /* 设置元素的定位方式为绝对定位 */
+  position: absolute;
+  /* 使用 attr() 函数获取元素的 data-number 属性的值，并将其作为内容显示 */
+  content: attr(data-number);
+  /* 设置元素的左边距为0 */
+  left: 0;
+  /* 设置元素的右边距为0 */
+  right: 0;
+  color: white;
+  background: rgb(51, 50, 50);
+  overflow: hidden;
+  -webkit-perspective: .8333rem;
+  perspective: .8333rem;
+}
+
+/* 翻页前的数字 */
+.countdown .flip .digital::before {
+  top: 0;
+  bottom: 50%;
+  border-bottom: .0052rem solid #666;
+  border-radius: .0521rem .0521rem 0 0;
+}
+
+/* 翻页后的数字 */
+.countdown .flip .digital::after {
+  top: 50%;
+  bottom: 0;
+  line-height: 0;
+  border-radius: 0 0 .0521rem .0521rem;
+}
+
+.countdown .flip .back::before,
+.countdown .flip .front::after {
+  z-index: 1;
+}
+
+.countdown .flip .back::after {
+  z-index: 2;
+}
+
+.countdown .flip .front::before {
+  z-index: 3;
+}
+
+.countdown .flip .back::after {
+  /* 设置变换原点为元素的中心顶部 */
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+  /* 使用旋转变换，绕X轴旋转半圈 */
+  -webkit-transform: rotateX(0.5turn);
+  transform: rotateX(0.5turn);
+}
+
+.countdown .flip.running .front::before {
+  /* 设置变换原点为中心底部 */
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+  /* 应用前翻动画，持续0.6秒，缓入缓出效果 */
+  -webkit-animation: frontFlipDown 0.6s ease-in-out;
+  animation: frontFlipDown 0.6s ease-in-out;
+  /* 添加阴影效果，向上.0104rem，透明度0.3 */
+  box-shadow: 0 -0.0104rem .0313rem rgba(255, 255, 255, 0.3);
+  /* 隐藏背面，确保动画效果 */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* 定义时钟翻转动画的样式 */
+.countdown .flip.running .back::after {
+  -webkit-animation: backFlipDown 0.6s ease-in-out;
+  animation: backFlipDown 0.6s ease-in-out;
+}
+
+/* 定义前翻动画的 Webkit 关键帧 */
+@-webkit-keyframes frontFlipDown {
+  to {
+    -webkit-transform: rotateX(0.5turn);
+    transform: rotateX(0.5turn);
+  }
+}
+
+/* 定义前翻动画的标准关键帧 */
+@keyframes frontFlipDown {
+  to {
+    -webkit-transform: rotateX(0.5turn);
+    transform: rotateX(0.5turn);
+  }
+}
+
+/* 定义后翻动画的 Webkit 关键帧 */
+@-webkit-keyframes backFlipDown {
+  to {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+}
+
+/* 定义后翻动画的标准关键帧 */
+@keyframes backFlipDown {
+  to {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+}
+
+/* countdown--end */
+
+
+.countdown-text{
+  font-size:.125rem;
+  color:#333;
+  text-align:left;
+  width: 5.2083rem;
+  margin:0 auto;
+  padding:.2083rem;
+  border-radius:.1042rem;
+}
+.countdown-text p{
+  margin-bottom: .0521rem;
+}
+.countdown-text a{
+  display:flex;
+  align-items:center;
+  color: #1195db;
+  text-decoration:none;
+}
+.countdown-text .icon{
+  transform:translateY(.0104rem);
+}
+/* .arrowbox{
+  position:absolute;
+  bottom:-10%;
+  left:50%;
+  transform:translateX(-50%);
+  animation-name:arrow;
+  animation-duration:2.3s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+  animation-direction:alternate;
+}
+@keyframes arrow{
+  from{
+    bottom:5%;
+  }
+  to{
+    bottom:4%;
+  }
+} */
+
+
+.cardbox{
+/* height:6.25rem; */
+width:100%;
+border-radius:.1042rem;
+display:flex;
+flex-wrap:wrap;
+/* padding-top: .099rem; */
+/* padding-bottom: .099rem; */
+justify-content:center;
+margin-top:1.3364rem;
+}
+.card{
+  width:300px;
+  height: 399.9936px;
+  /* border: .9984px solid #ccc; */
+  border-radius: 20.0064px;
+  margin: 6.0096px;
+  background-color: rgba(255,255,255,0.5);
+  /* text-align:center; */
+  padding: .1563rem;
+  color:#333;
+  box-shadow: 0 0 6.0096px rgba(54, 54, 54, 0.5);
+  border-top:rgba(255,255,255,0.5) .0052rem solid;
+  border-bottom:rgba(255,255,255,0.5) .0052rem solid;
+  position:relative;
+  overflow:hidden;
+  backdrop-filter:blur(.0052rem);
+  z-index: 1;
+}
+.card-content{
+  z-index:100;
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  flex-wrap:nowrap;
+  align-content:flex-start;
+  
+}
+.card h1{
+  font-size:.1563rem;
+  z-index:10;
+}
+.card p{
+  font-size:.1042rem;
+  margin-top:.0521rem;
+  margin-bottom:.0521rem;
+  z-index:10;
+}
+.card a{
+  font-size:.1042rem;
+  /* text-decoration:none; */
+  color:#0a1b24;
+  z-index:10;
+}
+.card a .icon {
+  transform:translateY(.0521rem);
+  margin-left:.0521rem;
+  z-index:10;
+}
+.card span {
+  position:absolute;
+  left:-0.1042rem;
+  bottom:.2083rem;
+  width:.6927rem;
+  height:.6927rem;
+  opacity:0.9;
+  background-color:#b1f8d7;
+  z-index:1;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  /* transform:translateZ(-0.0521rem); */
+}
+.card:nth-child(2) span{
+  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+.card:nth-child(3) span{
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
