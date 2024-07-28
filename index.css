@@ -167,13 +167,14 @@
   animation-duration: 5s;
   animation-direction: alternate;
 }
-/* 使用 text-fill-color 作为回退 */
+
 @supports not (-webkit-background-clip: text) {
   .logo {
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, #abf68d, #34d4d4, #4babeb);
+    background-image: noen;
+    color: #333;
   }
 }
+
 @keyframes identifier {
   from {
     background-position: left top;
