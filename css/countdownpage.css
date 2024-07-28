@@ -1,0 +1,89 @@
+@media screen and (min-width: 700px) {
+    body .count-down {
+        font-size:.7725rem;
+    }
+    .count-down .reflect span {
+        font-size:1.6094rem;
+    }
+    body .btns .btn{
+        font-size:.2682rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .reflect {
+        font-size: .5677rem;
+    }
+
+    .count-down span {
+        font-size: 1.6146rem;
+    }
+    /* body .btns {
+        height:.1042rem;
+    } */
+    body .btns .btn{
+        font-size:.1042rem;
+        line-height:1;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif !important;
+}
+
+.count-down {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 900;
+    font-size: .9535rem;
+    text-align: center;
+    position: relative;
+}
+
+span {
+    color: #fff;
+    font-size: 1.4651rem;
+    /* font-family: 'sofia'; */
+    padding: .1163rem;
+    height: 1.1628rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reflect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.group {
+    width: 3.7209rem;
+    height: 1.8605rem;
+    display: none;
+}
+
+.count-down .btn {
+    display: none;
+}
+
+.btns {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn {
+    border: none;
+    color: #fff;
+    background-color: #000;
+    font-size: .5814rem;
+}
