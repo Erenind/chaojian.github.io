@@ -59,6 +59,7 @@
   .main .content .countdown-text {
     width: 90%;
     border-radius: .4673rem;
+    padding:.4167rem;
   }
 
   .main .content .countdown-text h1 {
@@ -70,7 +71,8 @@
   }
 
   .header .nav .menu {
-    display: block;
+    display: flex;
+    align-items:center;
   }
 
   .header .nav {
@@ -88,8 +90,8 @@
   }
 
   .countdown-text .icon {
-    width: .3738rem;
-    height: .3738rem;
+    width:.7442rem;
+    height:.7442rem;
     transform: translateY(.0467rem);
   }
 
@@ -224,10 +226,13 @@
 
 .nav .menu {
   display: none;
+  height:100%;
 }
 
 .nav .menu .icon {
-  transform: translateY(.026rem);
+  /* transform: translateY(.035rem); */
+  width:.7442rem;
+  height:.7442rem;
 }
 
 .menu-box {
@@ -245,21 +250,32 @@
   color: black;
   padding: .3846rem;
 }
-
+.menu-box .links-box {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  align-content:center;
+  justify-content:space-between;
+  align-items:center;
+}
 .menu-box h6 {
   font-size: .5128rem;
+  line-height:1;
+  transform:translateY(.06rem);
+}
+.menu-box h6::target-text{
+  transform:translateY(.2564rem);
 }
 
 .menu-box .close {
-  position: absolute;
-  top: .4039rem;
-  right: .2778rem;
-  width: .8205rem;
-  height: .8205rem;
+  width:.7442rem;
+  height:.7442rem;
 }
 
 .menu-box .close .icon {
-  transform: translateY(-0.2051rem)
+  /* transform: translateY(-0.2051rem); */
+  width:.7442rem;
+  height:.7442rem;
 }
 
 .menu-box a {
@@ -570,6 +586,8 @@
   transform: translateY(.0521rem);
   margin-left: .0521rem;
   z-index: 10;
+  width:.7442rem;
+  height:.7442rem;
 }
 
 .card span {
