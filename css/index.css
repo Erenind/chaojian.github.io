@@ -127,6 +127,8 @@
 
   .cardbox .card a .icon {
     transform: translateY(.2393rem);
+    width:.7442rem;
+  height:.7442rem;
   }
 }
 
@@ -583,11 +585,10 @@
 }
 
 .card a .icon {
-  transform: translateY(.0521rem);
+  transform: translateY(.0681rem);
   margin-left: .0521rem;
   z-index: 10;
-  width:.7442rem;
-  height:.7442rem;
+  
 }
 
 .card span {
