@@ -1,0 +1,209 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width:1024px) {
+    body .header {
+        height: .9346rem;
+    }
+
+    .header .logo {
+        padding-left: .2336rem;
+        font-size: .5374rem;
+        line-height: .9346rem;
+    }
+
+    .header .nav>ul {
+        display: none;
+    }
+
+    .header .nav .menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .header .nav {
+        padding-right: .3037rem;
+    }
+}
+
+/* header */
+.header {
+    /* background-color: #333; */
+    color: hwb(0 100% 0%);
+    height: .2604rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-bottom: chartreuse .0052rem solid; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: .125rem;
+    font-weight: 900;
+    margin-left: .1042rem;
+    line-height: .2604rem;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #abf68d, #34d4d4, #4babeb);
+    margin: 0;
+    padding-left: .1563rem;
+    animation-name: identifier;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+
+@supports not (-webkit-background-clip: text) {
+    .logo {
+        background-image: noen;
+        color: #333;
+    }
+}
+
+@keyframes identifier {
+    from {
+        background-position: left top;
+    }
+
+    to {
+        background-position: right bottom;
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: .1563rem;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    margin: 0 .0521rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: .0938rem;
+    font-weight: 900;
+}
+
+.nav a:hover {
+    color: #abf68d;
+}
+
+.nav .menu {
+    display: none;
+    height: 100%;
+}
+
+.nav .menu .icon {
+    /* transform: translateY(.035rem); */
+    width: .7442rem;
+    height: .7442rem;
+}
+
+.menu-box {
+    display: none;
+    width: 8rem;
+    height: 12.8205rem;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 1s;
+    border-bottom-left-radius: .35rem;
+    border-top-left-radius: .35rem;
+    /* border-bottom-right-radius:.5128rem; */
+    color: black;
+    padding: .3846rem;
+    box-shadow: 0px 0px 0px 1px #d0d7de80, 0px 6px 12px -3px #424a530a, 0px 6px 18px 0px #424a531f;
+}
+
+.menu-box .links-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-box .links-box h1 {
+    line-height: .9767rem;
+    align-content: center;
+}
+
+.menu-box .close {
+    width: .7442rem;
+    height: .7442rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-.0233rem);
+}
+
+.menu-box .close .icon {
+    width: .3721rem;
+    height: .3721rem;
+}
+
+
+.menu-box a {
+    width: 100%;
+    font-size: .3721rem;
+    display: block;
+    padding-left: .2336rem;
+    color: #24292f;
+    display: flex;
+    align-items: center;
+    line-height: .7209rem;
+    font-weight: 500;
+}
+
+.menu-box a .icon {
+    margin-right: .1163rem;
+}
+
+.menu-box a:nth-child(1) {
+    margin-top: .4186rem;
+}
+
+.menu-box a:hover {
+    color: #abf68d;
+}
+
+.glass {
+    background: white;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+}
