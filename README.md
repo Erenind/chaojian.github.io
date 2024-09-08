@@ -1,8 +1,7 @@
 # 网站介绍
-## 
 此网页是关于一个高中生的一些介绍，简单做了一些页面,包含一些小功能，如高考倒计时，一个独特的日历，etc。
 ## 链接
-访问![erenind.github.io/chaojian.github.io](erenind.github.io/chaojian.github.io)即可查看
+访问**erenind.github.io/chaojian.github.io**即可查看
 
 
 # 开发历程（碎碎念）
