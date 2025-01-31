@@ -232,6 +232,16 @@ button{
 }
 
 /* introductionBox  and inputBox */
+@media screen and (max-width: 900px) {
+    .introductionOutBox {
+        width: 604px!important;
+        height: 304px!important;
+    }
+    .introductionBox {
+        width: 600px!important;
+        height: 300px!important;
+    }
+}    
 .introductionOutBox,.inputOutBox {
     border-radius: 11px;
     background-image: linear-gradient(to right bottom, #c6a0f6,#f5bde6,#f4dbd6,#ed8796,#ee99a0,#f5a97f,#eed49f,#a6da95,#8bd5ca,#91d7e3);
@@ -239,17 +249,17 @@ button{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    padding:3px;
+    padding:2px;
 }
 .introductionOutBox {
     display: none;
-    width:806px;
-    height: 506px;
+    width:804px;
+    height: 504px;
 }
 .inputOutBox {
     display: none;
-    width:406px;
-    height:256px;
+    width:404px;
+    height:254px;
 }
 .introductionBox, .inputBox{
     display:block;
