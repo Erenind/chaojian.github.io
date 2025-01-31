@@ -208,13 +208,11 @@ showTopBarButton.addEventListener('click',function(){
 
 // don't show seconds
 let showSecond
-if (getDate('showSecond')) {
-    if (getDate('showSecond') == "false") {
-        showSecond = false
-        dontShowSeconds.innerHTML = '显示秒'
-    } else {
-        showSecond = true
-    }
+if (getDate('showSecond') == "false") {
+    showSecond = false
+    dontShowSeconds.innerHTML = '显示秒'
+} else {
+    showSecond = true
 }
 dontShowSeconds.addEventListener('click',function(){
     if (showSecond) {
