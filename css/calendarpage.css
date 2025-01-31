@@ -9,21 +9,21 @@ ul {
 }
 
 body {
-  background-color:#B1F1FF;
+  background-color:#24273a;
 }
 
 .calendar {
   max-width:533px;
   width: 100%;
   height: 100vh;
-  background-color: #B1F1FF;
+  background-color: #24273a;
   margin:0 auto;
 }
 
 .header {
   width: 100%;
   height: 6%;
-  background-color: #B1FFE6;
+  background-color: #8087a2;
 }
 
 .header ul {
@@ -40,7 +40,7 @@ body {
   flex-basis: 13%;
   height: 50px;
   font-weight: 900;
-  color: #005c70;
+  color: #494d64;
   /* background-color:#CFF2E1;*/
   display: flex;
   justify-content: center;
@@ -52,6 +52,7 @@ body {
   height: 94%;
   overflow: scroll;
   scrollbar-width:thin;
+  scrollbar-color:#5b6078;
 }
 
 .calendarBody {
@@ -74,15 +75,20 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  color:#cad3f5;
 }
 
 .present {
-  background-color: #CFF2E1;
+  background-color: #363a4f;
 }
 
 .calendarBody li span {
   position: absolute;
-  top: -30%;
-  left: 0;
+  line-height:20px;
+  height:20px;
+  width:auto;
+  top: 16%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   font-size: 12px;
 }

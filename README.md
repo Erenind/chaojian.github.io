@@ -1,24 +1,12 @@
 # 网站介绍
-此网页是关于一个高中生的一些介绍，简单做了一些页面,包含一些小功能，如高考倒计时，一个独特的日历，etc。
+此网页是一个高中生的**个人网页**，只在高考2024-6-7前有效，之后做一个博客。
+简单做了一些页面，包含一些小功能，如高考倒计时，一个独特的日历，etc。
+
 ## 链接
-访问**erenind.github.io/chaojian.github.io**即可查看
+访问[erenind.github.io/chaojian.github.io](erenind.github.io/chaojian.github.io)即可查看
 
+**更多细节可见website中的介绍页面**
+[introduction](erenind.github.io/chaojian.github.io/introducion.html)
 
-# 开发历程（碎碎念）
-## 2024726
-刚满17岁后的那个暑假我开始制作这个网站
-可是到了7月26日我的首页都还每写好，看来我得加油了
-哎，作业也还有一大堆，
-努力把接下来的两个网站做好！！！
-
-
-## 2024728
-把首页做好了，庆祝一下🪅🪅🪅🪅🪅🪅🪅
-
-## 2024731
-离开学只有3个星期多三天，目前作业只有语文做完，原本4天前打算开始做数学，不过一直拖着，没办法（贪玩），一直到现在只作了4页。
-凌晨改代码。
-
-## 2024816
-个人和网站介绍页面做好了！！！
-但是离开学只有9天了。呜呜呜呜u
+## 问题反馈
+见[countdown](erenind.github.io/chaojian.github.io/countdown.html)中的更多信息
