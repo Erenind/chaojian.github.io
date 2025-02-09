@@ -174,9 +174,11 @@ defaultColor.addEventListener('click',function(){
     changeFontColor(window.getComputedStyle(this).backgroundColor)
     saveDate('fontColor',window.getComputedStyle(this).backgroundColor)
 })
-colorInput.addEventListener('input',function(e){
-    changeFontColor(e.target.value)
-    saveDate('fontColor',e.target.value)
+colorInput.addEventListener('focus',function(){
+    colorInput.addEventListener('input',function(e){
+        changeFontColor(e.target.value)
+        saveDate('fontColor',e.target.value)
+    })
 })
 
 // theme change
